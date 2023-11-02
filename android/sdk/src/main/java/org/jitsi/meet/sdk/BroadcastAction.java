@@ -79,7 +79,7 @@ public class BroadcastAction {
         SET_VIDEO_MUTED("org.jitsi.meet.SET_VIDEO_MUTED"),
         SET_CLOSED_CAPTIONS_ENABLED("org.jitsi.meet.SET_CLOSED_CAPTIONS_ENABLED"),
         TOGGLE_CAMERA("org.jitsi.meet.TOGGLE_CAMERA");
-
+        AUDIO_MODE("org.jitsi.meet.AUDIO_MODE");
         private final String action;
 
         Type(String action) {

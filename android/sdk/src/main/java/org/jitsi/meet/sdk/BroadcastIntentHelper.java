@@ -54,7 +54,7 @@ public class BroadcastIntentHelper {
         intent.putExtra("enabled", enabled);
         return intent;
     }
-    
+
     public static Intent buildRetrieveParticipantsInfo(String requestId) {
         Intent intent = new Intent(BroadcastAction.Type.RETRIEVE_PARTICIPANTS_INFO.getAction());
         intent.putExtra("requestId", requestId);
@@ -64,4 +64,9 @@ public class BroadcastIntentHelper {
     public static Intent buildToggleCameraIntent() {
         return new Intent(BroadcastAction.Type.TOGGLE_CAMERA.getAction());
     }
+
+    public static Intent buildSetAudioModeIntent() {
+        return new Intent(BroadcastAction.Type.AUDIO_MODE.getAction());
+    }
+
 }

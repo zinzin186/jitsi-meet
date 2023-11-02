@@ -26,10 +26,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>CFBundleURLName</key>
-			<string>org.jitsi.meet</string>
+			<string>org.jitsi.meet.bglobal</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>org.jitsi.meet</string>
+				<string>org.jitsi.meet.bglobal</string>
 			</array>
 		</dict>
 		<dict>
@@ -79,7 +79,7 @@
 	<key>RTCAppGroupIdentifier</key>
 	<string>group.org.jitsi.meet.appgroup</string>
 	<key>RTCScreenSharingExtension</key>
-	<string>org.jitsi.meet.broadcast.extension</string>
+	<string>org.jitsi.meet.bglobal.broadcast.extension</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>

@@ -47,5 +47,6 @@
 - (void)setVideoMuted:(BOOL)muted;
 - (void)setClosedCaptionsEnabled:(BOOL)enabled;
 - (void)toggleCamera;
+- (void)setAudioMode;
 
 @end

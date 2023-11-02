@@ -60,6 +60,7 @@ import { READY_TO_CLOSE } from './actionTypes';
 import { setParticipantsWithScreenShare } from './actions';
 import { participantToParticipantInfo, sendEvent } from './functions';
 import logger from './logger';
+const { AudioMode } = NativeModules;
 
 /**
  * Event which will be emitted on the native side when a chat message is received
@@ -386,6 +387,12 @@ function _registerForNativeEvents(store: IStore) {
     eventEmitter.addListener(ExternalAPI.TOGGLE_CAMERA, () => {
         dispatch(toggleCameraFacingMode());
     });
+
+    eventEmitter.addListener(ExternalAPI.AUDIO_MODE, () => {
+            AudioMode.updateDeviceList?.();
+            AudioMode.setAudioDevice('HEADPHONES');
+    });
+    
 }
 
 /**
